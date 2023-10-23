@@ -1,0 +1,21 @@
+.photoCat{
+    width: 100%;
+    height: auto;
+}
+
+.catLi{
+    width: 20%;
+    height: 300px;
+}
+
+.photoCat{
+    height: 300px;
+}
+
+.catList{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
