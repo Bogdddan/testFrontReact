@@ -19,3 +19,16 @@
     justify-content: center;
     gap: 30px;
 }
+
+.container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    margin: 20px 0;
+    padding: 10px;
+}

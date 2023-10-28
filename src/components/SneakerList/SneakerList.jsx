@@ -43,7 +43,7 @@ function SneakerList() {
   }
 
   return (
-    <>
+    <div className="container">
       <button onClick={handleUploadSneakers}>Upload sneakers</button>
       {cats.length > 0 ? ( // Перевірка, чи є фотографії
         <ul className="catList">
@@ -55,12 +55,12 @@ function SneakerList() {
           ))}
         </ul>
       ) : (
-        <p>No photos available</p> // Виведення повідомлення про відсутність фотографій
+        <p>Ops, No photos available</p> // Виведення повідомлення про відсутність фотографій
       )}
       {cats.length > 0 && ( // Перевірка, чи є фотографії
       <button onClick={handleLoadMore}>Load More</button>
     )}
-    </>
+    </div>
   );
   
 }
