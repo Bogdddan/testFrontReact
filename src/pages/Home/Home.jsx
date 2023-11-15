@@ -5,8 +5,9 @@ function Home() {
 
     <>
     <ul>
-      <li><NavLink to="/listpage">To list page</NavLink></li>
+      <li><NavLink to='/listpage'>To list page</NavLink></li>
       <li><NavLink to='/strengthbar'>To strength bar page</NavLink></li>
+      {/* <li><NavLink to='/favoritelist'>To favorites List</NavLink></li> */}
       {/* <li><NavLink to='/notfound'>To 404 Page</NavLink></li> */}
     </ul>
     </>

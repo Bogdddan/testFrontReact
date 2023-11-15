@@ -3,17 +3,36 @@ import React from 'react';
 import './App.css';
 // import Form from './Form/Form';
 import NavBar from './NavBar/NavBar';
+import FavoriteList from 'pages/FavoriteList/FavoriteList';
 // import NotFound from 'pages/NotFound/NotFound';
-import SponsorCarousel from './Carousel/Carousel';
+// import SponsorCarousel from './Carousel/Carousel';
 
 function App() {
 
+  
 
   return (
-    <>
+    <div>
       <NavBar/>
-      <SponsorCarousel/>
-    </>
+      <FavoriteList 
+        recipe={{
+          id: 1,
+          name: 'лазанья',
+      }}
+      />
+      <FavoriteList 
+        recipe={{
+          id: 2,
+          name: 'fdfdfdfd',
+      }}
+      />
+      <FavoriteList 
+        recipe={{
+          id: 3,
+          name: 'erreer',
+      }}
+      />
+    </div>
   );
 }
 
