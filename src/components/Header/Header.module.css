@@ -1,4 +1,9 @@
-/* .header{
+.header{
     display: flex;
-    justify-content: end;
-} */
+    justify-content: flex-end;
+    padding: 10px 10px 5px;
+}
+
+header > span{
+    font-size: 15px;
+}

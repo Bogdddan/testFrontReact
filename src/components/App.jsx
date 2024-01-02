@@ -1,23 +1,13 @@
 import React from 'react';
-// import { Route, Routes, Navigate } from 'react-router-dom';
 import './App.css';
-// import Form from './Form/Form';
-// import NavBar from './NavBar/NavBar';
-import FavoriteList from 'pages/FavoriteList/FavoriteList';
-// import NotFound from 'pages/NotFound/NotFound';
-// import SponsorCarousel from './Carousel/Carousel';
-// import DsFillBookmarkHeartFill from 'react-icons/bs';
+import FavoriteList from 'pages/RecipeItem/RecipeItem';
 import Header from './Header/Header';
 
 function App() {
-
-
-
   return (
-    <div>
-      {/* <NavBar /> */}
-      <Header/>
+    
       <section>
+        <Header/>
         <FavoriteList
           recipe={{
             id: 1,
@@ -37,7 +27,7 @@ function App() {
           }}
         />
       </section>
-    </div>
+
   );
 }
 

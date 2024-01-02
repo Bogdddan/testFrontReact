@@ -1,17 +1,17 @@
 import { useActions } from "hooks/useActions";
 import React from "react";
-import { useSelector } from "react-redux";
-import css from './FavoriteList.module.css';
-// import { actions } from "store/favorites/favoritesSlice";
+import css from './RecipeItem.module.css';
+import { useFavorites } from "hooks/useFavorites";
 
 function FavoriteList({recipe}) {
-  const {favorites} = useSelector(state => state);
+
+  const {favorites} = useFavorites();
 
   const {toggleFavorites} = useActions()
   
   const isExist = favorites.some(r => r.id === recipe.id);
 
-  console.log(favorites);
+  // console.log(favorites.length);
   return (
     <>
     <div className={css.item}>
