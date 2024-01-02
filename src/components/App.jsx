@@ -21,19 +21,19 @@ function App() {
         <FavoriteList
           recipe={{
             id: 1,
-            name: 'лазанья',
+            name: 'Steak',
           }}
         />
         <FavoriteList
           recipe={{
             id: 2,
-            name: 'fdfdfdfd',
+            name: 'Risotto',
           }}
         />
         <FavoriteList
           recipe={{
             id: 3,
-            name: 'erreer',
+            name: 'Pasta',
           }}
         />
       </section>

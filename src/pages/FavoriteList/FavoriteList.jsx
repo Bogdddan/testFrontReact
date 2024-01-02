@@ -1,6 +1,7 @@
 import { useActions } from "hooks/useActions";
 import React from "react";
 import { useSelector } from "react-redux";
+import css from './FavoriteList.module.css';
 // import { actions } from "store/favorites/favoritesSlice";
 
 function FavoriteList({recipe}) {
@@ -13,8 +14,8 @@ function FavoriteList({recipe}) {
   console.log(favorites);
   return (
     <>
-    <div>
-        <p>{recipe.name}</p>
+    <div className={css.item}>
+        <h3>{recipe.name}</h3>
         <button onClick={() => 
           toggleFavorites(recipe)}>
             {isExist ? 'Remove from' : 'Add to'} favorites
